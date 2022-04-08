@@ -1,0 +1,14 @@
+.login-input-fields input {
+    width: 300px;
+    padding: 7px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.login-btn {
+    width: 150px !important;
+}
+
+.login-btn:hover {
+    color: goldenrod;
+}

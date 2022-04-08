@@ -1,0 +1,14 @@
+.register-input-fields input {
+    width: 300px;
+    padding: 7px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.register-btn {
+    width: 150px !important;
+}
+
+.register-btn:hover {
+    color: goldenrod;
+}

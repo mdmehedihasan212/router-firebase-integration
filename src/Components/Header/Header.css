@@ -11,3 +11,17 @@
 .navbar a:hover {
     color: goldenrod;
 }
+
+.singout-btn {
+    border: none;
+    background-color: white;
+    font-size: 1em;
+}
+
+.singout-btn:hover {
+    color: goldenrod;
+}
+
+.icon {
+    font-size: 1em;
+}

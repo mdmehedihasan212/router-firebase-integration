@@ -1,4 +1,5 @@
 import React from 'react';
+import './Home.css';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from '../../firebase.init';
 
@@ -7,8 +8,10 @@ const Home = () => {
 
     return (
         <div>
-            <img src={user ? user.photoURL : 'Undefine'} alt="" />
-            <p>Current User: {user ? user.displayName : 'No body'}</p>
+            <article className='user-info'>
+                <img src={user ? user.photoURL : 'Undefine'} alt="" />
+                <h3>Login User: {user ? user.displayName : 'No body'}</h3>
+            </article>
         </div>
     );
 };

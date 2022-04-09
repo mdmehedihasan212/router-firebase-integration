@@ -16,14 +16,14 @@ const Header = () => {
                 <Link to={'/products'}>Products</Link>
                 <Link to={'/orders'}>Orders</Link>
                 <Link to={'/register'}>Register</Link>
-                <span>{user?.displayName && user.displayName}</span>
                 {
                     user?.uid
                         ?
-                        <button onClick={() => signOut(auth)} className='singout-btn'>Sign out</button>
+                        <button onClick={() => signOut(auth)} className='sing-out-btn'>Sign out</button>
                         :
                         <Link to={'/log-in'}>Log in</Link>
                 }
+                <span>{user?.displayName && user.displayName}</span>
             </nav>
         </div>
     );

@@ -1,0 +1,14 @@
+.main-container {
+    margin-top: 50;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.product-container img {
+    width: 250px;
+}
+
+.product-container {
+    margin: 20px;
+    padding: 20px;
+}

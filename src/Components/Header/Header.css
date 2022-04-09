@@ -12,13 +12,13 @@
     color: goldenrod;
 }
 
-.singout-btn {
+.sing-out-btn {
     border: none;
     background-color: white;
     font-size: 1em;
 }
 
-.singout-btn:hover {
+.sing-out-btn:hover {
     color: goldenrod;
 }
 

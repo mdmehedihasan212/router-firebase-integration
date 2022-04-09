@@ -3,6 +3,7 @@
     padding: 7px;
     margin: 5px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .login-btn {
@@ -11,4 +12,20 @@
 
 .login-btn:hover {
     color: goldenrod;
+}
+
+.google-sign-btn {
+    width: 300px;
+    padding: 7px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.google-sign-btn:hover {
+    color: goldenrod;
+}
+
+.google-icon {
+    font-size: 1.3em;
 }

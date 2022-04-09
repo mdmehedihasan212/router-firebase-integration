@@ -3,29 +3,13 @@
     padding: 7px;
     margin: 5px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .register-btn {
     width: 150px !important;
 }
 
-.google-sign-btn {
-    width: 150px;
-    padding: 7px;
-    margin: 5px;
-    border-radius: 5px;
-}
-
-.google-sign-btn:hover {
-    color: goldenrod;
-}
-
 .register-btn:hover {
     color: goldenrod;
-}
-
-.submit-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

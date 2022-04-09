@@ -1,7 +1,6 @@
 import React from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
-import { FiLogOut } from 'react-icons/fi';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { getAuth, signOut } from 'firebase/auth';
 import app from '../../firebase.init';
@@ -21,7 +20,7 @@ const Header = () => {
                 {
                     user?.uid
                         ?
-                        <button onClick={() => signOut(auth)} className='singout-btn'>Sign out <FiLogOut className='icon'></FiLogOut> </button>
+                        <button onClick={() => signOut(auth)} className='singout-btn'>Sign out</button>
                         :
                         <Link to={'/log-in'}>Log in</Link>
                 }

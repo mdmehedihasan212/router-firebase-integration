@@ -3,7 +3,7 @@ import React from 'react';
 const Orders = () => {
     return (
         <div>
-            <h3>It's a private page only for log in users.</h3>
+            <h3>User Order Products Item</h3>
         </div>
     );
 };

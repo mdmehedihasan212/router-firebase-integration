@@ -10,7 +10,7 @@ const Home = () => {
         <div>
             <article className='user-info'>
                 <img src={user ? user.photoURL : 'Undefine'} alt="" />
-                <h3>Login User: {user ? user.displayName : 'No body'}</h3>
+                <h3>Login User : {user ? user.displayName : 'No body'}</h3>
             </article>
         </div>
     );

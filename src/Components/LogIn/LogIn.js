@@ -1,11 +1,24 @@
 import React from 'react';
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { FcGoogle } from 'react-icons/fc';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { auth } from '../../firebase.init';
 import './LogIn.css';
 
 const LogIn = () => {
     const [signInWithGoogle] = useSignInWithGoogle(auth);
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const from = location.state?.from?.pathname || "/";
+
+    const handleToSignIn = () => {
+        signInWithGoogle()
+            .then(() => {
+                navigate(from, { replace: true });
+            })
+    }
+
 
     return (
         <div>
@@ -19,7 +32,7 @@ const LogIn = () => {
             </form>
             <div className="submit-btn">
                 {/* <input onClick={() => signInWithGoogle()} className='google-sign-btn' type="submit" value="Google Sign in" /> */}
-                <button onClick={() => signInWithGoogle()} className='google-sign-btn'> <FcGoogle
+                <button onClick={handleToSignIn} className='google-sign-btn'> <FcGoogle
                     className='google-icon'
                 ></FcGoogle> Google Sign in</button>
             </div>
